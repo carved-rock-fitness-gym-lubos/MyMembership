@@ -14,15 +14,15 @@ on:
 
 jobs:
   class schedule:
-    if: GitHub.events.inputs.feature == 'class_schedule'
-    uses: ./.GitHub/workflows/class_schedule.yml
+    if: github.events.inputs.feature == 'class_schedule'
+    uses: ./.github/workflows/class_schedule.yml
 
   membership:
-    if: GitHub.events.inputs.feature == 'membership'
-    uses: ./.GitHub/workflows/membership.yml
+    if: github.events.inputs.feature == 'membership'
+    uses: ./.github/workflows/membership.yml
 
   trainings:
-    if: GitHub.events.inputs.feature == 'trainings'
-    uses: ./.GitHub/workflows/trainings.yml
+    if: github.events.inputs.feature == 'trainings'
+    uses: ./.github/workflows/trainings.yml
 
 
