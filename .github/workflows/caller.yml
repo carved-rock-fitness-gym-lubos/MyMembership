@@ -1,0 +1,28 @@
+name: MyMemberhip Caller workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      feature:
+        description: 'Which feature to deploy'
+        required: true
+        type: choice
+        options:
+          - class_schedule
+          - membership
+          - training
+
+jobs:
+  class schedule:
+    if: GitHub.events.inputs.feature == 'class_schedule'
+    uses: ./.GitHub/workflows/class_schedule.yml
+
+  membership:
+    if: GitHub.events.inputs.feature == 'membership'
+    uses: ./.GitHub/workflows/membership.yml
+
+  trainings:
+    if: GitHub.events.inputs.feature == 'trainings'
+    uses: ./.GitHub/workflows/trainings.yml
+
+
