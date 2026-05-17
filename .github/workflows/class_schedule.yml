@@ -1,7 +1,7 @@
 name: Class Schedule CI/CD
 
 on:
-  workflows_calls:
+  workflow_calls:
 
 jobs:
   build-and-test:

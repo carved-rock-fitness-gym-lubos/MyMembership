@@ -1,7 +1,7 @@
 name: Personal Training Feature
 
 on:
-  workflows_calls:
+  workflow_calls:
 
 jobs:
   component-testing:

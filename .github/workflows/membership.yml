@@ -1,7 +1,7 @@
 name: Membership Management Pipeline
 
 on:
-  workflows_calls:
+  workflow_calls:
 
 jobs:
   security:
