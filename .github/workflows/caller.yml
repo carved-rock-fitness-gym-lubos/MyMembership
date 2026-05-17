@@ -23,6 +23,6 @@ jobs:
 
   trainings:
     if: github.events.inputs.feature == 'trainings'
-    uses: ./.github/workflows/trainings.yml
+    uses: ./.github/workflows/training.yml
 
 
