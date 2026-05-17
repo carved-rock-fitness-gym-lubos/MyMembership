@@ -13,7 +13,7 @@ on:
           - training
 
 jobs:
-  class schedule:
+  class_schedule:
     if: github.events.inputs.feature == 'class_schedule'
     uses: ./.github/workflows/class_schedule.yml
 
