@@ -93,11 +93,4 @@ jobs:
           echo "Environment URL: ${{ vars.APP_URL }}"
 
 
-Lets start a workflow
-
-Instead of being independent workflows that must be managed separately in the UI, all workflows and their stages are shown up in one spot here. 
-
-
-
-
 
